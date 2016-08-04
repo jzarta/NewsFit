@@ -1,0 +1,22 @@
+.commentArea
+{
+	width: 500px;
+}
+
+.list-group-item
+{
+	width: 500px;
+}
+
+.glyphicon-minus
+{
+	float: right;
+	color:black;
+	cursor: pointer;
+}
+
+.glyphicon-minus:hover
+{
+	color: red;
+
+}
