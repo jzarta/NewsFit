@@ -1,3 +1,8 @@
+/*body {
+	background-image: url("./images/gotaTwo.png");
+	background-repeat: no-repeat;
+}*/
+}
 .commentArea
 {
 	width: 500px;
@@ -5,18 +10,18 @@
 
 .list-group-item
 {
-	width: 500px;
+	width: 300px;
 }
 
 .glyphicon-minus
 {
-	float: right;
+	float: center;
 	color:black;
 	cursor: pointer;
 }
 
 .glyphicon-minus:hover
 {
-	color: red;
+	color: blue;
 
 }

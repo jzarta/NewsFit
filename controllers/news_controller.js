@@ -17,15 +17,15 @@ module.exports = function(app){
 	//home page
 	app.get('/', function(req, res) {
 		//load google news into request
-	request('https://news.google.com/', function (error, response, html) {
+	request('https://www.wired.com/', function (error, response, html) {
 			if (error) throw error;
 			//save the html into Cheerio
 			var $ = cheerio.load(html);
 			//for each article
-			$('.esc-layout-article-cell').each(function(i, element){
+			$('.clearfix').each(function(i, element){
 				var entry = [];
 				//push the title and link into aray for 
-				$(this).find('.esc-lead-article-title').each(function(i, element){
+				$(this).find('.clearfix').each(function(i, element){
 					entry.push($(this).children('a').text()); //title
 					entry.push($(this).children('a').attr('href')); //link
 				});
